@@ -9,7 +9,7 @@ phases:
     commands:
         - echo "hello world"
         - echo "hello $(date)" > build/out.txt
-       
+        - sed 's/hello world/DEPLOY/' buildspec.yml > build/buildspec.yml
 artifacts:
    files:
       - ./build/*
