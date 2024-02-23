@@ -7,7 +7,7 @@ phases:
        - mkdir -p ./build
   build:
     commands:
-        - echo "hello world
+        - echo "hello world"
        
 artifacts:
    files:
