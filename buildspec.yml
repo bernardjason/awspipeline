@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  pre_build:
+   commands:
+       - echo "creating folder"
+       - mkdir -p ./build
+  build:
+    commands:
+        - echo "hello world
+       
+artifacts:
+   files:
+      - ./build/*
