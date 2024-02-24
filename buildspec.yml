@@ -21,7 +21,10 @@ phases:
         - aws sts get-caller-identity
         - echo "hello world"
         - echo "hello $(date)" > build/out.txt
-        - sed 's/hello world/DEPLOY/' buildspec.yml > build/buildspec.yml
+        - npm install
+        - npm run build
+        - cdk ls
+        - cdk deploy -y
 artifacts:
    files:
      - '**/*'
