@@ -6,12 +6,15 @@ phases:
       nodejs: 20.x
    commands:
        - npm install -g aws-cdk
+       - npm -g install typescript
   pre_build:
    commands:
        - echo "creating folder"
        - echo "userName [${userName}]"
        - echo "userPassword [${userPassword}]"
        - echo "bucketPrefix [${bucketPrefix}]"
+       - cdk --version
+       - tsc --version
        - mkdir -p ./build
   build:
     commands:
