@@ -23,6 +23,7 @@ phases:
         - echo "hello $(date)" > build/out.txt
         - npm install
         - npm run build
+        - cdk bootstrap -y
         - cdk ls
         - cdk deploy -y
 artifacts:
