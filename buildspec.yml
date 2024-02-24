@@ -2,10 +2,10 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
+   runtime-versions:
       nodejs: 20.x
-	commands:
-	  - npm install -g aws-cdk
+   commands:
+       - npm install -g aws-cdk
   pre_build:
    commands:
        - echo "creating folder"
